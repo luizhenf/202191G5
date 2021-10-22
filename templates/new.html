@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<link rel="stylesheet" href=" {{ url_for('static', filename='css/styles.css') }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Redutor de Consumo | Novo Equipamento</title>
+    </head>
+    <body>
+        <header id="faixa">
+            <a href="/">
+                <img src=" {{ url_for('static', filename='img/minilogo.png') }}"alt="">
+            </a>
+            <h1>
+                Reduza seu consumo de energia
+            </h1>
+        </header>
+            <section id="new">
+                <div id="texto">
+                    Siga os seguintes passos: <br>
+                    1. Escolha um dos eletrodomésticos.<br>
+                    2. Informe o consumo registrado em seu medidor. <br>
+                    3. Informe o tempo que durou a medição. <br>
+                    4. Clique em cadastrar.<br>
+                </div>
+
+
+                <div id="card">
+   
+                    <form action="/new" method="POST">
+
+                        <div>
+                            <input type="radio" id="nome" name="nome" value="Televisão">
+                            <label for="nome">Televisão</label><br><br>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="nome" name="nome" value="Geladeira">
+                            <label for="nome">Geladeira</label><br><br>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="nome" name="nome" value="Lava Roupas">
+                            <label for="nome">Lava Roupas</label><br><br>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="nome" name="nome" value="Microondas">
+                            <label for="nome">Microondas</label><br><br>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="nome" name="nome" value="Ar Condicionado">
+                            <label for="nome">Ar condicionado</label><br><br>
+                        </div>                    
+
+                        <div class="label-float">
+                            <br>
+                            <input type="text" name="consumo" id="consumo">
+                            <label for="consumo">Consumo (em Kwh)</label>
+                        </div>
+
+                        <div class="label-float">
+                            <br>
+                            <input type="text" name="tempo" id="tempo">
+                            <label for="tempo">Tempo (em horas)</label>
+                        </div>
+
+                        <div class="justify-center">
+                            <button type="submit">Cadastrar</button>
+                        </div>
+
+                    </form>
+
+                </div id="re">
+                    <a href="/resp">
+                        Resposta
+                    </a>
+                </div>
+            
+            </section>
+    </body>
+</html>

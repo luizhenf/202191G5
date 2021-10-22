@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang='pt-br'>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href=" {{ url_for('static', filename='css/styles.css') }}">
+        <title>Redutor de Consumo</title>  
+    </head>
+
+    <body>
+        <header id="faixa">
+            <a href="/">
+                <img src=" {{ url_for('static', filename='img/minilogo.png') }}"alt="">
+            </a>
+            <h1>
+                Reduza seu consumo de energia
+            </h1>
+        </header>
+
+        <nav>
+            <h2>
+                Compare o consumo de energia de seu eletrodoméstico com a média de nosso banco de dados e descubra se ele está tendo um consumo acima da média.
+            </h2>
+        </nav>
+        <section id="banner">
+
+            <a href="/new">Novo Equipamento</a>
+                    
+            <div>
+            <img src="{{ url_for('static' ,filename='img/1.jpg')}}" alt="">
+            </div>
+
+        </section>
+        
+
+
+    </body>
+</html>

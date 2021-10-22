@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Code, sans-serif;
+    letter-spacing: .2rem;
+}
+
+@font-face{
+    font-family: Code;
+    src: url("./../font/CODE-Bold.otf")
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+/* Estilos da página index.html*/
+
+header#faixa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(195, 245, 200);
+    height: 10vw;
+}
+
+header#faixa a img{
+    max-width: 100%;
+    width:6vw;
+    padding: 0rem;
+    margin-left: 1vw;
+}
+
+header#faixa h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 14vw;
+    font-size: 3vw;
+    color:rgb(44, 98, 12);
+    text-shadow: 2px 2px 5px #00000050;
+}
+
+
+nav h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vw;
+    font-size: 2vw;
+    color:rgb(44, 98, 12);
+    text-shadow: 2px 2px 5px #00000050;
+    text-align: center; 
+}
+
+section#banner {
+    background-color: rgb(157, 230, 152);
+    padding: 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    min-height: 15vw;
+}
+
+section#banner a{
+    font-size: 3vw;
+    text-shadow: 2px 2px 5px #00000050;
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(3, 44, 3);
+    transition: all .3s ease-out;
+    margin-left: 1.5vw;
+}
+section#banner a:hover{
+    color: rgba(101, 212, 27, 0.822);
+}
+
+section#banner img{
+    width: 80%;
+    height:80%;
+    border-radius: 40px;
+}
+
+section#banner div{
+    width: 50%;
+}
+
+/* Fim estilos da página index.html*/
+
+/* Estilos da página new.html*/
+
+section#new div#texto {
+    position: absolute;
+    text-align: left;
+    color: #ffffff;
+    font-size: 2vw;
+    left: 1vw;
+    top: 12vw;
+    line-height: 3vw;
+    background-color: #0b3d16;
+}
+section#new div#card {
+    position: absolute;
+    right: 3vw;
+    margin-top: 2vw;
+    justify-content: right;
+    background-color:rgb(195, 245, 200);
+    padding: 30px;
+    border-radius: 2%;
+    border: 1px solid #2a1405;
+    box-shadow: 5px 5px 1px 0px #7c5b1d90;
+    width: 20vw;
+    font-size: 20px;
+}
+
+section#new div.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+} 
+
+section#new div.label-float input{
+    width: 100%;
+    padding: 9px 3px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #108d36;
+    background-color: transparent;
+    outline:none;
+    min-width: 180px;
+    font-size: 20px;
+    transition: all 0.3s ease-out;
+    border-radius: 0;
+}
+section#new div.label-float input:focus{
+    border-bottom: 2px solid #a8864e;
+}
+section#new div.label-float label {
+    color: #0130ec;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all 0.3s ease-out;
+}
+section#new div.label-float input:focus + label,
+section#new div.label-float input:valid + label {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #0b3d16;
+}
+section#new div.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+section#new button {
+    background-color: transparent;
+    border-color: #000000;
+    color: #000000;
+    padding: 0.8rem;
+    font-size: 20px;
+    margin-top: 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s ease-out;
+}
+
+section#new button:hover {
+    background-color: #3f2f13;
+    color:#fff;
+}
+
+#re {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+
+/* Fim estilos da página new.html*/
+
+/* Estilos da página resp.html*/
+
+
+/* Fim estilos da página resp.html*/
