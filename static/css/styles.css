@@ -16,7 +16,6 @@ html, body{
     scroll-behavior: smooth;
 }
 
-/* Estilos da página index.html*/
 
 header#faixa{
     display: flex;
@@ -43,6 +42,8 @@ header#faixa h1{
     text-shadow: 2px 2px 5px #00000050;
 }
 
+
+/* Estilos da página index.html*/
 
 nav h2{
     display: flex;
@@ -98,6 +99,15 @@ section#new div#texto {
     font-size: 2vw;
     left: 1vw;
     top: 12vw;
+    line-height: 3vw;
+    background-color: #0b3d16;
+}
+section#new div#texto a {
+    position: absolute;
+    color: #ffffff;
+    font-size: 3vw;
+    right: 1vw;
+    bottom: 2vw;
     line-height: 3vw;
     background-color: #0b3d16;
 }
@@ -175,11 +185,6 @@ section#new button:hover {
     color:#fff;
 }
 
-#re {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-}
 
 
 /* Fim estilos da página new.html*/

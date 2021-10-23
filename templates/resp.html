@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang='pt-br'>
+
+<html lang="pt-br">
+
+<link rel="stylesheet" href=" {{ url_for('static', filename='css/styles.css') }}">
 
     <head>
         <meta charset="UTF-8">
-        <meta name='viewport' content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href=" {{ url_for('static', filename='css/styles.css') }}">
-        <title>Redutor de Consumo</title>  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Redutor de Consumo | Seu eletrodoméstico</title>
     </head>
-
+    
     <body>
+        <header id="faixa">
+            <a href="/">
+                <img src=" {{ url_for('static', filename='img/minilogo.png') }}"alt="">
+            </a>
+            <h1>
+                Reduza seu consumo de energia
+            </h1>
+        </header>
 
-      <nav>
-        <a href="/">
-            <img src=" {{ url_for('static', filename='img/minilogo.png') }}"alt="">
-        </a>
-        
-      </nav>
         <section id="lista_equipamentos">
             <table>
                 <h3>Lista de Equipamentos</h3>
@@ -26,8 +30,7 @@
                                     <td>{{e.id}}</td>
                                     <td>{{e.nome}}</td>
                                     <td>{{e.consumo}}</td>
-                                    <td>{{e.tempo}}</td>
-                                     
+                                    <td>{{e.tempo}}</td>   
                                 </tr>
                             {% endfor %}
                      </tbody>
