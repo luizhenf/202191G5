@@ -16,10 +16,18 @@
                 <img src=" {{ url_for('static', filename='img/minilogo.png') }}"alt="">
             </a>
             <h1>
-                Reduza seu consumo de energia
+               Reduza seu consumo de energia
             </h1>
         </header>
 
+        <section id="card">
+            <h2>
+                Dados do seu eletrodoméstico <br>
+                Nome: {{soma}}
+                Consumo médio: {{media}}<br>
+            </h2>
+        </section>
+<!--
         <section id="lista_equipamentos">
             <table>
                 <h3>Lista de Equipamentos</h3>
@@ -35,6 +43,6 @@
                             {% endfor %}
                      </tbody>
             </table>        
-        </section>
+        </section>   -->
     </body>
 </html>

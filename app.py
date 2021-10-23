@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.sql import func
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///equipamentos.sqlite3'
@@ -35,8 +36,10 @@ def new():
 
 @app.route("/resp")
 def resp():
-    equipamentos = Equipamento.query.all()
-    return render_template('resp.html', equipamentos=equipamentos)
+    media = db.session.query(func.avg(Equipamento.consumo)).all()
+    soma = db.session.query(func.sum(Equipamento.consumo)).all()
+    return render_template('resp.html', media=media, soma=soma)
+    
 
 if __name__ =='__main__':
     db.create_all()

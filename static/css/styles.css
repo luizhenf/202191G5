@@ -185,11 +185,24 @@ section#new button:hover {
     color:#fff;
 }
 
-
-
 /* Fim estilos da página new.html*/
+
 
 /* Estilos da página resp.html*/
 
+section#card {
+    position: absolute;
+    left: 18vw;
+    margin-top: 2vw;
+    justify-content: right;
+    background-color:rgb(195, 245, 200);
+    padding: 30px;
+    border-radius: 2%;
+    border: 1px solid #2a1405;
+    box-shadow: 5px 5px 1px 0px #7c5b1d90;
+    width: 30vw;
+    font-size: 15px;
+    line-height: 2vw;
+}
 
 /* Fim estilos da página resp.html*/
