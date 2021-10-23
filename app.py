@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func
 
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///equipamentos.sqlite3'
 db = SQLAlchemy(app)
@@ -36,9 +37,12 @@ def new():
 
 @app.route("/resp")
 def resp():
-    media = db.session.query(func.avg(Equipamento.consumo)).all()
-    soma = db.session.query(func.sum(Equipamento.consumo)).all()
-    return render_template('resp.html', media=media, soma=soma)
+    medtv = db.session.query(func.avg(Equipamento.consumo)).filter(Equipamento.nome=='Televisão')
+    medge = db.session.query(func.avg(Equipamento.consumo)).filter(Equipamento.nome=='Geladeira')
+    medlr = db.session.query(func.avg(Equipamento.consumo)).filter(Equipamento.nome=='Lava Roupas')
+    medmo = db.session.query(func.avg(Equipamento.consumo)).filter(Equipamento.nome=='Microondas')
+    medac = db.session.query(func.avg(Equipamento.consumo)).filter(Equipamento.nome=='Ar Condicionado')
+    return render_template('resp.html', medtv=medtv, medge=medge, medlr=medlr, medmo=medmo, medac=medac)
     
 
 if __name__ =='__main__':

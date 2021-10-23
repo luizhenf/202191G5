@@ -92,25 +92,38 @@ section#banner div{
 
 /* Estilos da página new.html*/
 
-section#new div#texto {
+
+section#new div#texto{
     position: absolute;
-    text-align: left;
-    color: #ffffff;
-    font-size: 2vw;
-    left: 1vw;
-    top: 12vw;
-    line-height: 3vw;
-    background-color: #0b3d16;
+    left: 5vw;
+    top: 13vw;
+    justify-content: left;
+    background-color:rgb(195, 245, 200);
+    padding: 30px;
+    border-radius: 2%;
+    border: 1px solid #2a1405;
+    box-shadow: 5px 5px 1px 0px #7c5b1d90;
+    width:max-content;
+    font-size: 20px;
+    line-height: 2vw;
 }
-section#new div#texto a {
+
+section#new div#texto a{
     position: absolute;
-    color: #ffffff;
-    font-size: 3vw;
-    right: 1vw;
-    bottom: 2vw;
-    line-height: 3vw;
-    background-color: #0b3d16;
+    left: 12vw;
+    bottom: 1vw;
+    justify-content: center;
+    background-color:rgb(195, 245, 200);
+    padding: 30px;
+    border-radius: 2%;
+    border: 1px solid #2a1405;
+    box-shadow: 5px 5px 1px 0px #7c5b1d90;
+    width:max-content;
+    font-size: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 2vw;
 }
+
 section#new div#card {
     position: absolute;
     right: 3vw;
@@ -190,9 +203,9 @@ section#new button:hover {
 
 /* Estilos da página resp.html*/
 
-section#card {
+section#card h2{
     position: absolute;
-    left: 18vw;
+    left: 5vw;
     margin-top: 2vw;
     justify-content: right;
     background-color:rgb(195, 245, 200);
@@ -201,7 +214,36 @@ section#card {
     border: 1px solid #2a1405;
     box-shadow: 5px 5px 1px 0px #7c5b1d90;
     width: 30vw;
-    font-size: 15px;
+    font-size: 20px;
+    line-height: 2vw;
+}
+section#card h3{
+    position: absolute;
+    right: 4vw;
+    margin-top: 2vw;
+    justify-content: right;
+    background-color:rgb(195, 245, 200);
+    padding: 30px;
+    border-radius: 2%;
+    border: 1px solid #2a1405;
+    box-shadow: 5px 5px 1px 0px #7c5b1d90;
+    width: 30vw;
+    font-size: 20px;
+    line-height: 2vw;
+}
+
+section#card h4{
+    position: absolute;
+    left: 5vw;
+    bottom: 5vw;
+    justify-content: left;
+    background-color:rgb(195, 245, 200);
+    padding: 30px;
+    border-radius: 2%;
+    border: 1px solid #2a1405;
+    box-shadow: 5px 5px 1px 0px #7c5b1d90;
+    width:max-content;
+    font-size: 20px;
     line-height: 2vw;
 }
 
