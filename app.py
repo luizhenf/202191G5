@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func
+from sqlalchemy import desc
 
 
 app = Flask(__name__)
@@ -37,12 +38,16 @@ def new():
 
 @app.route("/resp")
 def resp():
-    medtv = db.session.query(func.avg(Equipamento.consumo)).filter(Equipamento.nome=='Televisão')
-    medge = db.session.query(func.avg(Equipamento.consumo)).filter(Equipamento.nome=='Geladeira')
-    medlr = db.session.query(func.avg(Equipamento.consumo)).filter(Equipamento.nome=='Lava Roupas')
-    medmo = db.session.query(func.avg(Equipamento.consumo)).filter(Equipamento.nome=='Microondas')
-    medac = db.session.query(func.avg(Equipamento.consumo)).filter(Equipamento.nome=='Ar Condicionado')
-    return render_template('resp.html', medtv=medtv, medge=medge, medlr=medlr, medmo=medmo, medac=medac)
+    equipamentos = Equipamento.query.all()
+    un = db.session.query(Equipamento.nome).filter(True == True).order_by(desc(Equipamento.id)).first()
+    uc = db.session.query(Equipamento.consumo).filter(True == True).order_by(desc(Equipamento.id)).first()
+    sumcotv = db.session.query(func.sum(Equipamento.consumo)).filter(Equipamento.nome=='Televisão').first()
+    sumtetv = db.session.query(func.sum(Equipamento.tempo)).filter(Equipamento.nome=='Televisão').first()
+    medge = db.session.query(func.avg(Equipamento.consumo)).filter(Equipamento.nome=='Geladeira').first()
+    medlr = db.session.query(func.avg(Equipamento.consumo)).filter(Equipamento.nome=='Lava Roupas').first()
+    medmo = db.session.query(func.avg(Equipamento.consumo)).filter(Equipamento.nome=='Microondas').first()
+    medac = db.session.query(func.avg(Equipamento.consumo)).filter(Equipamento.nome=='Ar Condicionado').first()
+    return render_template('resp.html', un=un, uc=uc, sumcotv=sumcotv, sumtetv=sumtetv, equipamentos=equipamentos, medge=medge, medlr=medlr, medmo=medmo, medac=medac)
     
 
 if __name__ =='__main__':

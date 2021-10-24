@@ -104,7 +104,7 @@ section#new div#texto{
     border: 1px solid #2a1405;
     box-shadow: 5px 5px 1px 0px #7c5b1d90;
     width:max-content;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 2vw;
 }
 
@@ -119,7 +119,7 @@ section#new div#texto a{
     border: 1px solid #2a1405;
     box-shadow: 5px 5px 1px 0px #7c5b1d90;
     width:max-content;
-    font-size: 30px;
+    font-size: 20px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     line-height: 2vw;
 }
@@ -205,7 +205,7 @@ section#new button:hover {
 
 section#card h2{
     position: absolute;
-    left: 5vw;
+    left: 15vw;
     margin-top: 2vw;
     justify-content: right;
     background-color:rgb(195, 245, 200);
@@ -214,7 +214,7 @@ section#card h2{
     border: 1px solid #2a1405;
     box-shadow: 5px 5px 1px 0px #7c5b1d90;
     width: 30vw;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 2vw;
 }
 section#card h3{
@@ -228,7 +228,7 @@ section#card h3{
     border: 1px solid #2a1405;
     box-shadow: 5px 5px 1px 0px #7c5b1d90;
     width: 30vw;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 2vw;
 }
 
@@ -243,7 +243,7 @@ section#card h4{
     border: 1px solid #2a1405;
     box-shadow: 5px 5px 1px 0px #7c5b1d90;
     width:max-content;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 2vw;
 }
 
