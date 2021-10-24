@@ -92,29 +92,29 @@ section#banner div{
 
 /* Estilos da página new.html*/
 
-
 section#new div#texto{
     position: absolute;
     left: 5vw;
     top: 13vw;
     justify-content: left;
-    background-color:rgb(195, 245, 200);
+    background-color:rgb(7, 51, 11);
     padding: 30px;
     border-radius: 2%;
     border: 1px solid #2a1405;
     box-shadow: 5px 5px 1px 0px #7c5b1d90;
     width:max-content;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 2vw;
+    color:rgb(255, 255, 255);
 }
 
-section#new div#texto a{
+section#comp {
     position: absolute;
-    left: 12vw;
-    bottom: 1vw;
+    left: 18vw;
+    bottom: 2vw;
     justify-content: center;
     background-color:rgb(195, 245, 200);
-    padding: 30px;
+    padding: 20px;
     border-radius: 2%;
     border: 1px solid #2a1405;
     box-shadow: 5px 5px 1px 0px #7c5b1d90;
@@ -123,10 +123,31 @@ section#new div#texto a{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     line-height: 2vw;
 }
+section#comp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#comp button {
+    background-color: transparent;
+    border-color: #000000;
+    color: #000000;
+    padding: 0.8rem;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s ease-out;
+}
+
+section#comp button:hover {
+    background-color: #3f2f13;
+    color:#fff;
+}
 
 section#new div#card {
     position: absolute;
-    right: 3vw;
+    right: 7vw;
     margin-top: 2vw;
     justify-content: right;
     background-color:rgb(195, 245, 200);
@@ -140,8 +161,8 @@ section#new div#card {
 
 section#new div.label-float{
     position: relative;
-    padding-top: 13px;
-    margin-top: 5%;
+    padding-top: 10px;
+    margin-top: 2%;
     margin-bottom: 5%;
 } 
 
@@ -161,14 +182,7 @@ section#new div.label-float input{
 section#new div.label-float input:focus{
     border-bottom: 2px solid #a8864e;
 }
-section#new div.label-float label {
-    color: #0130ec;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 13px;
-    transition: all 0.3s ease-out;
-}
+
 section#new div.label-float input:focus + label,
 section#new div.label-float input:valid + label {
     font-size: 20px;
@@ -205,7 +219,7 @@ section#new button:hover {
 
 section#card h2{
     position: absolute;
-    left: 15vw;
+    left: 5vw;
     margin-top: 2vw;
     justify-content: right;
     background-color:rgb(195, 245, 200);
@@ -213,8 +227,8 @@ section#card h2{
     border-radius: 2%;
     border: 1px solid #2a1405;
     box-shadow: 5px 5px 1px 0px #7c5b1d90;
-    width: 30vw;
-    font-size: 15px;
+    width: 40vw;
+    font-size: 20px;
     line-height: 2vw;
 }
 section#card h3{
@@ -222,20 +236,21 @@ section#card h3{
     right: 4vw;
     margin-top: 2vw;
     justify-content: right;
-    background-color:rgb(195, 245, 200);
+    background-color:rgb(4, 46, 8);
     padding: 30px;
     border-radius: 2%;
     border: 1px solid #2a1405;
     box-shadow: 5px 5px 1px 0px #7c5b1d90;
     width: 30vw;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 2vw;
+    color:#fff;
 }
 
 section#card h4{
     position: absolute;
     left: 5vw;
-    bottom: 5vw;
+    bottom: 3vw;
     justify-content: left;
     background-color:rgb(195, 245, 200);
     padding: 30px;
@@ -243,8 +258,37 @@ section#card h4{
     border: 1px solid #2a1405;
     box-shadow: 5px 5px 1px 0px #7c5b1d90;
     width:max-content;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 2vw;
 }
+
+section#lista_equipamentos {
+    position:relative;
+    top:35vw;
+    padding: 2rem;
+    overflow-x: auto;
+  }
+  
+  section#lista_equipamentos h3 {
+     text-align: center;
+     color: #165f09;
+     font-size: 3rem;
+     text-shadow: 1px 1px 2px #d3b947;
+     letter-spacing: 0.3rem;
+     margin-bottom: 3rem;
+   }
+  
+   section#lista_equipamentos table {
+     border-collapse: collapse;
+     width: 100%;
+     border-spacing: 0;
+   }
+  
+  section#lista_equipamentos table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
 
 /* Fim estilos da página resp.html*/

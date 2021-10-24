@@ -22,21 +22,23 @@
 
         <section id="card">
             <h2>
-                Dados do seu eletrodoméstico<br>
-                Nome: {{ un }} <br>
-                Consumo: O seu eletrodoméstico está consumindo {{ meduc }} kwh a cada hora de funcionamento. <br>
+                Dados do seu eletrodoméstico<br><br>
+                Nome: {{ un }} <br><br>
+                Consumo: <br>
+                O seu eletrodoméstico está consumindo {{ meduc }} kwh a cada hora de funcionamento. <br>
             </h2>
             <h3>
-                Em nosso BD temos as seguintes média de consumo em kwh a cada hora de funcionamento.<br>
+                Em nosso BD temos as seguintes médias:<br><br>
                 Televisão: {{ medtv }} <br>
                 Geladeira: {{ medge }} <br>
                 Lava Roupas: {{ medlr }} <br>
                 Micro-ondas: {{ medmo }} <br>
-                Ar Condicionado: {{ medac }} <br>
+                Ar Condicionado: {{ medac }} <br><br>
+                Os valores estão em khm a cada hora de funcionamento.
             </h3>
             <h4>
-                Conclusão:<br><br>
-                {{ conc }} <br><br><br>
+                Conclusão:<br>
+                {{ conc }} <br>
             </h4>
         </section>
 

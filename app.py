@@ -59,22 +59,25 @@ def resp():
     sumteac = db.session.query(func.sum(Equipamento.tempo)).filter(Equipamento.nome=='Ar Condicionado').scalar()
     medac = sumcoac / sumteac
     if (un == 'Televisão') and (meduc > medtv):
-        conc = "O consumo de sua televisão está acima da média"
+        conc = "O consumo de sua televisão está acima da média!"
     if (un == 'Televisão') and (meduc <= medtv):
-        conc = "O consumo de sua televisão está dentro do esperado"
+        conc = "O consumo de sua televisão está dentro do esperado!"
     if (un == 'Geladeira') and (meduc > medge):
-        conc = "O consumo de sua geladeira está acima da média"
+        conc = "O consumo de sua geladeira está acima da média!"
     if (un == 'Geladeira') and (meduc <= medge):
-        conc = "O consumo de sua geladeira está dentro do esperado"
+        conc = "O consumo de sua geladeira está dentro do esperado!"
     if (un == 'Lava Roupas') and (meduc > medlr):
-        conc = "O consumo de sua Lava Roupas está acima da média"
+        conc = "O consumo de sua Lava Roupas está acima da média!"
     if (un == 'Lava Roupas') and (meduc <= medlr):
-        conc = "O consumo de sua Lava Roupas está dentro do esperado"
+        conc = "O consumo de sua Lava Roupas está dentro do esperado!"
     if (un == 'Microondas') and (meduc > medmo):
-        conc = "O consumo de seu Micro-ondas está acima da média"
+        conc = "O consumo de seu Micro-ondas está acima da média!"
     if (un == 'Microondas') and (meduc <= medmo):
-        conc = "O consumo de seu Micro-ondas está dentro do esperado"
-
+        conc = "O consumo de seu Micro-ondas está dentro do esperado!"
+    if (un == 'Ar Condicionado') and (meduc > medac):
+        conc = "O consumo de seu Ar Condicionado está acima da média!"
+    if (un == 'Ar Condicionado') and (meduc <= medac):
+        conc = "O consumo de seu Ar Condicionado está dentro do esperado!"
     return render_template('resp.html', conc=conc, un=un, meduc=meduc, medtv=medtv, equipamentos=equipamentos, medge=medge, medlr=medlr, medmo=medmo, medac=medac)
   
 
