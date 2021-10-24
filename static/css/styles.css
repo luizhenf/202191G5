@@ -223,12 +223,12 @@ section#card h2{
     margin-top: 2vw;
     justify-content: right;
     background-color:rgb(195, 245, 200);
-    padding: 30px;
+    padding: 25px;
     border-radius: 2%;
     border: 1px solid #2a1405;
     box-shadow: 5px 5px 1px 0px #7c5b1d90;
     width: 40vw;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2vw;
 }
 section#card h3{
@@ -237,12 +237,12 @@ section#card h3{
     margin-top: 2vw;
     justify-content: right;
     background-color:rgb(4, 46, 8);
-    padding: 30px;
+    padding: 25px;
     border-radius: 2%;
     border: 1px solid #2a1405;
     box-shadow: 5px 5px 1px 0px #7c5b1d90;
     width: 30vw;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2vw;
     color:#fff;
 }
@@ -254,12 +254,12 @@ section#card h4{
     border-radius: 2%;
     justify-content: left;
     background-color:rgb(195, 245, 200);
-    padding: 30px;
+    padding: 25px;
     border-radius: 2%;
     border: 1px solid #2a1405;
     box-shadow: 5px 5px 1px 0px #7c5b1d90;
     width:40vw;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2vw;
 }
 
