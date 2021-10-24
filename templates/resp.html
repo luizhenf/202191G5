@@ -24,11 +24,11 @@
             <h2>
                 Dados do seu eletrodoméstico<br>
                 Nome: {{ un }} <br>
-                Consumo: {{uc}} <br>
+                Consumo: O seu eletrodoméstico está consumindo {{ meduc }} kwh a cada hora de funcionamento. <br>
             </h2>
             <h3>
-                Media de consumo em nosso BD<br>
-                Televisão: {{medtv}}  <br>
+                Em nosso BD temos as seguintes média de consumo em kwh a cada hora de funcionamento.<br>
+                Televisão: {{ medtv }} <br>
                 Geladeira: {{ medge }} <br>
                 Lava Roupas: {{ medlr }} <br>
                 Micro-ondas: {{ medmo }} <br>
@@ -36,7 +36,7 @@
             </h3>
             <h4>
                 Conclusão:<br><br>
-                O seu eletrodoméstico está consumindo ... <br><br><br>
+                {{ conc }} <br><br><br>
             </h4>
         </section>
 
