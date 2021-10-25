@@ -94,16 +94,16 @@ section#banner div{
 
 section#new div#texto{
     position: absolute;
-    left: 5vw;
+    left: 3vw;
     top: 13vw;
     justify-content: left;
     background-color:rgb(7, 51, 11);
-    padding: 30px;
+    padding: 3vw;
     border-radius: 2%;
     border: 1px solid #2a1405;
     box-shadow: 5px 5px 1px 0px #7c5b1d90;
     width:max-content;
-    font-size: 19px;
+    font-size: 1.5vw;
     line-height: 2vw;
     color:rgb(255, 255, 255);
 }
@@ -114,12 +114,12 @@ section#comp {
     bottom: 2vw;
     justify-content: center;
     background-color:rgb(195, 245, 200);
-    padding: 20px;
+    padding: 1.5vw;
     border-radius: 2%;
     border: 1px solid #2a1405;
     box-shadow: 5px 5px 1px 0px #7c5b1d90;
     width:max-content;
-    font-size: 20px;
+    font-size: 2vw;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     line-height: 2vw;
 }
@@ -134,7 +134,7 @@ section#comp button {
     color: #000000;
     padding: 0.8rem;
     font-size: 20px;
-    border-radius: 4px;
+    border-radius: 40px;
     cursor: pointer;
     outline: none;
     transition: all 0.4s ease-out;
@@ -147,35 +147,35 @@ section#comp button:hover {
 
 section#new div#card {
     position: absolute;
-    right: 7vw;
+    right: 3vw;
     margin-top: 2vw;
     justify-content: right;
     background-color:rgb(195, 245, 200);
-    padding: 30px;
+    padding: 3vw;
     border-radius: 2%;
     border: 1px solid #2a1405;
     box-shadow: 5px 5px 1px 0px #7c5b1d90;
     width: 20vw;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 section#new div.label-float{
     position: relative;
-    padding-top: 10px;
+    padding-top: 1vw;
     margin-top: 2%;
     margin-bottom: 5%;
 } 
 
 section#new div.label-float input{
     width: 100%;
-    padding: 9px 3px;
+    padding: 9px 3px; 
     display: inline-block;
     border: 0;
     border-bottom: 2px solid #108d36;
     background-color: transparent;
     outline:none;
-    min-width: 180px;
-    font-size: 20px;
+    min-width: 18px;
+    font-size: 1.5vw;
     transition: all 0.3s ease-out;
     border-radius: 0;
 }
@@ -185,8 +185,8 @@ section#new div.label-float input:focus{
 
 section#new div.label-float input:focus + label,
 section#new div.label-float input:valid + label {
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 1.5vw;
+    margin-top: 1vw;
     color: #0b3d16;
 }
 section#new div.justify-center{
@@ -199,9 +199,9 @@ section#new button {
     border-color: #000000;
     color: #000000;
     padding: 0.8rem;
-    font-size: 20px;
+    font-size: 1.5vw;
     margin-top: 2rem;
-    border-radius: 4px;
+    border-radius: 40px;
     cursor: pointer;
     outline: none;
     transition: all 0.4s ease-out;
@@ -219,47 +219,47 @@ section#new button:hover {
 
 section#card h2{
     position: absolute;
-    left: 5vw;
+    left: 3vw;
     margin-top: 2vw;
     justify-content: right;
     background-color:rgb(195, 245, 200);
-    padding: 25px;
-    border-radius: 2%;
+    padding: 2vw;
+    border-radius: 4%;
     border: 1px solid #2a1405;
     box-shadow: 5px 5px 1px 0px #7c5b1d90;
     width: 40vw;
-    font-size: 16px;
+    font-size: 1.3vw;
     line-height: 2vw;
 }
 section#card h3{
     position: absolute;
-    right: 4vw;
+    right: 3vw;
     margin-top: 2vw;
     justify-content: right;
     background-color:rgb(4, 46, 8);
-    padding: 25px;
+    padding: 2vw;
     border-radius: 2%;
     border: 1px solid #2a1405;
     box-shadow: 5px 5px 1px 0px #7c5b1d90;
     width: 30vw;
-    font-size: 16px;
+    font-size: 1.3vw;
     line-height: 2vw;
     color:#fff;
 }
 
 section#card h4{
     position: absolute;
-    left: 5vw;
+    left: 3vw;
     bottom: 3vw;
     border-radius: 2%;
     justify-content: left;
     background-color:rgb(195, 245, 200);
-    padding: 25px;
+    padding: 2vw;
     border-radius: 2%;
     border: 1px solid #2a1405;
     box-shadow: 5px 5px 1px 0px #7c5b1d90;
     width:40vw;
-    font-size: 16px;
+    font-size: 1.3vw;
     line-height: 2vw;
 }
 
