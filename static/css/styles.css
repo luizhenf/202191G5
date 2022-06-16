@@ -290,6 +290,16 @@ section#lista_equipamentos {
     border-bottom: 1px solid #ddd;
     text-align: left;
   }
+
+  section#dados{
+    font-size: 3vw;
+    text-shadow: 2px 2px 5px #00000050;
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(3, 44, 3);
+    transition: all .3s ease-out;
+    margin-left: 1.5vw;
+  }
   
 
 /* Fim estilos da página resp.html*/
